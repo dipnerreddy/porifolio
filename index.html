@@ -132,6 +132,50 @@
           box-shadow: #D6D6E7 0 3px 7px inset;
           transform: translateY(4px);
         }
+        .text {
+
+          margin-top: 307px;
+          margin-left: 220px;
+        }
+        
+        /* You can adjust the margin for the button as needed */
+        #btn {
+          margin-top: 20px;
+          margin-left: 200px;
+        }
+          /* Media query to center the text and button on screens <= 900px */
+          @media screen and (max-width: 900px) {
+            .text {
+    
+              text-align: center;
+              margin-top: 150px;
+              margin-left: 50px;
+              margin-right: 50px;
+    
+            }
+      
+            
+            /* You can adjust the margin for the button as needed */
+            #btn {
+              margin-top: 20px;
+              margin-left: 50px;
+              margin-right: 50px;
+            }
+          }
+
+
+
+        /* Media query to hide the image on screens <= 900px */
+        @media screen and (max-width: 1400px) {
+        .image {
+         display: none;
+          }
+          .about{
+            margin-left: 200px;
+            margin-right: 200px;
+          }
+}
+
     </style>
 </head>
 <body>
@@ -149,10 +193,10 @@
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#intro">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " aria-disabled="true" href="#">Services</a>
@@ -201,20 +245,21 @@
 <!-- about section  -->
 
 <section id="about" style="background-image: url('/assets/about.png'); background-position: center; background-size: cover; height: 100vh;">
-  <div class="image" >
-    <img src="/assets/support.png" style="margin-top: 250px; margin-right: 170px;">
-  </div>
-  <div class="text" >
-    <h1 style="color:#fff; font-family: Montserrat; font-size: 40px; font-style: Bold; text-align: center; margin: top 20px; margin-top: 307px; margin-left: 220px;">Belief Impacts Business</h1>
-    <p style="color:#fff; font-family: Montserrat; font-size: 19px; font-style: normal; text-align: center; margin-top: 30px; margin-left: 220px;">The work we do at DTS goes beyond assisting <br>companies with technological transformation. <br> We support them in genuinely affecting both <br> the communities they serve and their clientele.</p>
+  <div class="col-md-5 text-center" >
     
-
-      <button id="btn" style="margin-left: 400px;">
-        MORE
-      </button>
   </div>
-</div>
+  <div class="image " >
+    <img class="img-fluid" src="/assets/support.png" style="margin-top: 250px; margin-right: 170px;">
+  </div>
+  <div class="text">
+    <h1 style="color:#fff; font-family: Montserrat; font-size: 40px; font-style: Bold; text-align: center;">Belief Impacts Business</h1>
+    <p style="color:#fff; font-family: Montserrat; font-size: 19px; font-style: normal; text-align: center; margin-top: 30px; ">The work we do at DTS goes beyond assisting <br>companies with technological transformation. <br> We support them in genuinely affecting both <br> the communities they serve and their clientele.</p>
+    <a href="http://dipnerreddy.infinityfreeapp.com/" target="_blank">
+      <button id="btn" >MORE</button>
+    </a>
 
+</div>
+</section>
 
 
     
